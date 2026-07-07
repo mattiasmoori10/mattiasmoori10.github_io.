@@ -1,0 +1,567 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+.fondo-principal{
+    background-image:url("img/patear.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+
+/* MENÚ */
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    background:rgba(0,0,0,0.7);
+    padding:20px;
+}
+
+.menu li{
+    margin:0 20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#00ff88;
+}
+
+/* HEADER FIJO */
+
+.header-fijo{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+/* INICIO */
+
+.principal{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.principal h1{
+    font-size:70px;
+}
+
+.principal p{
+    font-size:25px;
+    margin-top:20px;
+    max-width:700px;
+}
+
+/* REDES */
+
+.redes{
+    margin-top:30px;
+}
+
+.redes a{
+    color:white;
+    margin:0 15px;
+    font-size:35px;
+    transition:0.3s;
+}
+
+.redes a:hover{
+    color:#00ff88;
+}
+
+/* BLOG */
+
+.blog{
+    padding:120px 40px;
+    text-align:center;
+}
+
+.imagen-blog{
+    width:500px;
+    border-radius:10px;
+    margin:30px 0;
+}
+
+.blog article{
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* GALERIA */
+
+.titulo{
+    text-align:center;
+    margin-top:120px;
+    font-size:50px;
+}
+
+.galeria{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:50px;
+}
+
+.galeria img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.5s;
+}
+
+.galeria img:hover{
+    transform:scale(1.1);
+    filter:brightness(120%);
+}
+
+.galeria p{
+    margin-top:10px;
+    text-align:center;
+    font-size:20px;
+}
+
+/* VIDEOS */
+
+.videos{
+    padding:120px 30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+}
+
+.video-box{
+    text-align:center;
+    max-width:800px;
+}
+
+.video-box p{
+    margin-top:20px;
+    line-height:1.8;
+    font-size:20px;
+}
+.cabecera-blog{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:30px;
+    margin-top:30px;
+}
+
+.texto-blog{
+    flex:1;
+}
+
+.foto-alumno{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+}
+/* ==========================================
+   ESTILOS ADICIONALES PARA LA PA3
+   ========================================== */
+
+/* --- SECCIÓN CONTACTOS --- */
+.seccion-contactos {
+    padding: 120px 40px 40px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenedor-contactos {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.bloque-info, .bloque-formulario {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Aplicación de Degradado Lineal solicitado */
+.bloque-info {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Tabla Estilizada */
+.tabla-contacto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.tabla-contacto th {
+    background-color: #00ff88;
+    color: #111;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.tabla-contacto td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    vertical-align: top;
+}
+
+.tabla-contacto tr class="fila-separador" th {
+    background-color: #222;
+    color: #00ff88;
+    font-size: 16px;
+}
+
+/* Caja de Mapa */
+.mapa-box {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #444;
+}
+
+/* Formulario */
+.bloque-formulario h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.campo input, .campo textarea {
+    padding: 12px;
+    background-color: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: #00ff88;
+}
+
+.btn-enviar {
+    background-color: #00ff88;
+    color: #111;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-enviar:hover {
+    background-color: #00b35f;
+    transform: translateY(-2px);
+}
+
+/* --- SECCIÓN NOSOTROS (GRID AREAS Y FUENTES) --- */
+.grid-nosotros {
+    display: grid;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px 60px 20px;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif; /* Uso de fuente externa */
+    grid-template-areas: 
+        "banner banner lateral"
+        "texto texto lateral"
+        "equipo1 equipo2 lateral";
+}
+
+.banner-titulo { grid-area: banner; }
+.banner-titulo h2 { font-size: 32px; color: #00ff88; border-bottom: 2px solid #333; padding-bottom: 10px; }
+
+/* Implementación opcional de columnas CSS en el párrafo */
+.columna-texto { 
+    grid-area: texto; 
+    line-height: 1.8;
+    font-size: 16px;
+    color: #ddd;
+    text-align: justify;
+}
+
+.imagen-lateral { grid-area: lateral; }
+.foto-equipo-1 { grid-area: equipo1; }
+.foto-equipo-2 { grid-area: equipo2; }
+
+.grid-nosotros img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+/* Ajuste Responsivo para Tablets y Celulares */
+@media (max-width: 768px) {
+    .grid-nosotros {
+        grid-template-areas: 
+            "banner"
+            "texto"
+            "lateral"
+            "equipo1"
+            "equipo2";
+    }
+    .grid-nosotros img {
+        height: 250px;
+    }
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+/*=========================
+PROMOCIONES
+=========================*/
+
+.promociones{
+
+padding-top:140px;
+
+text-align:center;
+
+min-height:100vh;
+
+background:#111;
+
+}
+
+.promociones h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.subtitulo{
+
+font-size:24px;
+
+margin-bottom:40px;
+
+}
+
+.cupon{
+
+width:420px;
+
+margin:auto;
+
+background:#1b1b1b;
+
+padding:30px;
+
+border-radius:15px;
+
+border:3px dashed #00ff88;
+
+animation:cupon 2s infinite;
+
+}
+
+.cupon h2{
+
+color:#00ff88;
+
+margin-bottom:20px;
+
+}
+
+.cupon p{
+
+font-size:18px;
+
+line-height:1.7;
+
+margin-bottom:20px;
+
+}
+
+.cupon button{
+
+background:#00ff88;
+
+color:#111;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:8px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.cupon button:hover{
+
+transform:scale(1.08);
+
+background:white;
+
+}
+
+@keyframes cupon{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.cupon{
+
+width:90%;
+
+}
+
+.promociones h1{
+
+font-size:38px;
+
+}
+
+.subtitulo{
+
+font-size:20px;
+
+}
+
+}
+/*=========================
+COMBOS
+==========================*/
+
+.card{
+
+border:none;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 20px #00ff88;
+
+}
+
+.card img{
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.card-body{
+
+text-align:center;
+
+}
+
+.card h3{
+
+font-weight:bold;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:17px;
+
+line-height:1.7;
+
+}

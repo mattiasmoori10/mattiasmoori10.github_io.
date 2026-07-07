@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones Exclusivas</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+<header class="header-fijo">
+
+<nav>
+
+<ul class="menu">
+
+<li><a href="index.html">Inicio</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="galeria.html">Galería</a></li>
+<li><a href="videos.html">Videos</a></li>
+<li><a href="promociones.html">Promociones</a></li>
+<li><a href="combos.html">Combos</a></li>
+<li><a href="contactos.html">Contactos</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="promociones">
+
+<h1>PROMOCIONES EXCLUSIVAS</h1>
+
+<p class="subtitulo">
+
+El mejor entrenamiento al mejor precio.
+
+</p>
+
+<div class="cupon">
+
+<h2>2x1 EN ENTRENAMIENTO</h2>
+
+<p>
+
+Disfruta del fútbol entrenando con nuestros profesores.
+
+</p>
+
+<button onclick="reclamarCupon()">
+
+Reclamar Cupón
+
+</button>
+
+<div id="codigoCupon"></div>
+
+</div>
+
+</section>
+
+<script>
+
+function reclamarCupon(){
+
+Swal.fire({
+
+title:"¡Cupón Activado!",
+
+text:"Ahora puedes disfrutar de nuestra promoción.",
+
+icon:"success",
+
+confirmButtonText:"Aceptar"
+
+}).then(()=>{
+
+document.getElementById("codigoCupon").innerHTML=`
+
+<br>
+
+<h3>Muestra el código en nuestra oficina:</h3>
+
+<h2 style="color:#00ff88;">
+
+FUTBOL-PA4-ISIL
+
+</h2>
+
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
